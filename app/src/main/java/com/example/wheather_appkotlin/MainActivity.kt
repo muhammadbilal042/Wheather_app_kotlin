@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                     binding.tvsunrice.text= "${time(Sunrice)}"
                     binding.tvsunset.text= "${time(Sunset)}"
                     binding.tvsea.text= "$SeaLeval hpa"
-                    binding.tvlocation.text="$CityName"
+                    binding.tvlocation.text = CityName.replaceFirstChar { it.uppercase() }
                     binding.tvDay.text = Dayname(System.currentTimeMillis())
                     binding.tvdate.text= date()
 
